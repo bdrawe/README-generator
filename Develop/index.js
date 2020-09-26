@@ -2,16 +2,24 @@ const fs = require('fs');
 
 const inquirer = require('inquirer');
 
+import generateMarkdown from './utils/generateMarkdown';
+
 // import { prompt } from 'inquirer';
+// import {generateMarkdown} from 'generateMarkdown'
 
 // array of questions for user
-// const questions = () => {
+ const questions = () => {
 inquirer
      .prompt ([
+         {
+            type:'input',
+            name: 'githubUser',
+            message: "What is your github username?"
+         },
         {
             type:'input',
-            name: 'projName',
-            message: 'What is your projects name?'
+            name: 'title',
+            message: 'What is the name of your project?'
         },
         {
             type:'input',
@@ -44,13 +52,19 @@ inquirer
             name: 'userTests',
             message: 'Please provide a description of past test you have performed on your app.'
         }
+    ]);
+ };
 
-    ])
-// }
-
-
+questions()
+    .then(data => { return generateMarkdown(data)})
+    .then
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile('./dist/README.md', data, err =>{
+        if (err) throw err
+
+        console.log("Markdown File made! ")
+    })
 }
 
 // function to initialize program
