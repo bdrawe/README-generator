@@ -32,8 +32,19 @@ inquirer
             type:'input',
             name: 'contributor',
             message: 'Please list the developers that helped in the project.'
+        }, 
+        {
+            type: 'checkbox',
+            name: 'license',
+            message: 'What type of license would fit your project?',
+            choices: ['MIT','ICS','Apache License 2.0','GNU GPLv3']
+        },
+        {
+            type:'input',
+            name: 'userTests',
+            message: 'Please provide a description of past test you have performed on your app.'
         }
-            
+
     ])
 // }
 
