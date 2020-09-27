@@ -1,5 +1,5 @@
 // function to generate markdown for README
-module.exports = data => {
+function generateMarkdown(data) {
   return `
   
   # ${data.title}
