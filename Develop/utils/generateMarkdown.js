@@ -28,7 +28,8 @@ const generateMarkdown = (data) => {
 
   ${data.license}
 
-  ##Questions
+  ## Questions
+
   Feel free to reach out to me with any questions or issues you have with this product. You can reach out to me in the following ways below
 
   Contact me by [GitHub]("https://github.com/${data.githubUser}) or
