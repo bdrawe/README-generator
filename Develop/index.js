@@ -116,7 +116,7 @@ const questions = () => {
 }
 
 const write = (data) =>{
-    fs.writeFile('./dist/readme.md', generatePage(data), err => {
+    fs.writeFile('./dist/readme.md', data, err => {
         if (err) throw err;
       
         console.log('markdown file complete!');
@@ -125,7 +125,8 @@ const write = (data) =>{
 
 
 questions()
-    .then(data => console.log("Questions Done"))
+    .then(data => {console.log("Done"); return data})
+        
     .then(data =>{
         return generateMarkdown(data)
     })

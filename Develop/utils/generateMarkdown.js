@@ -5,7 +5,7 @@ const generateMarkdown = (data) => {
   return `
   # ${data.title}
  
-  ##Table of Contents
+  ## Table of Contents
  
     [Description](##Description)
     [Installation](##Installation)
@@ -17,16 +17,16 @@ const generateMarkdown = (data) => {
   ## Description
   ${data.description}
  
-  ##Installation
+  ## Installation
   ${data.installation}
  
-  ##Use-case
+  ## Use-case
   ${data.useInfo}
  
-  ##Contributors
+  ## Contributors
   ${data.contributor}
  
-  ##License
+  ## License
   ${data.license}
   `;
  };
