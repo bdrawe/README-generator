@@ -3,15 +3,16 @@
 const generateMarkdown = (data) => {
   console.log(data);
   return `
+  
   # ${data.title}
  
   ## Table of Contents
  
-    [Description](##Description)
-    [Installation](##Installation)
-    [How to Use it](##Use-case)
-    [Contributors](##Contributors)
-    [License](##License)
+    [Description](#Description)
+    [Installation](#Installation)
+    [How to Use it](#Use-case)
+    [Contributors](#Contributors)
+    [License](#License)
  
  
   ## Description

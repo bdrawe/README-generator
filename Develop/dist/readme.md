@@ -1,26 +1,27 @@
 
+  
   # Weather Dashboard
  
   ## Table of Contents
  
-    [Description](##Description)
-    [Installation](##Installation)
-    [How to Use it](##Use-case)
-    [Contributors](##Contributors)
-    [License](##License)
+    [Description](# Description)
+    [Installation](# Installation)
+    [How to Use it](# Use-case)
+    [Contributors](# Contributors)
+    [License](# License)
  
  
   ## Description
-  Find the weather where you live! This dashboard provides the temperature, uv index, and even more! Just type in your city! 
+  Built with Javascript, CSS, an HTML this is a great tool to find the weather in your city using the openweatherAPI
  
   ## Installation
-  Clone the repo
+  Clone the github Repo
  
   ## Use-case
-  To find the daily weather
+  to find the weather
  
   ## Contributors
-  Bryce Drawe
+  bdrawe
  
   ## License
   MIT
