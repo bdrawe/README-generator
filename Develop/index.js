@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 
@@ -113,35 +114,7 @@ const questions = () => {
        }
    ])
 }
-const generatePage = (data) => {
-    return `
-    # ${title}
-   
-    ##Table of Contents
-   
-      [Description](##Description)
-      [Installation](##Installation)
-      [How to Use it](##Use-case)
-      [Contributors](##Contributors)
-      [License](##License)
-   
-   
-    ## Description
-    ${description}
-   
-    ##Installation
-    ${installation}
-   
-    ##Use-case
-    ${useInfo}
-   
-    ##Contributors
-    ${contributor}
-   
-    ##License
-    ${license}
-    `;
-   };
+
 const write = (data) =>{
     fs.writeFile('./dist/readme.md', generatePage(data), err => {
         if (err) throw err;
@@ -152,9 +125,9 @@ const write = (data) =>{
 
 
 questions()
-    .then(data => console.log(data))
+    .then(data => console.log(data.title))
     .then(data =>{
-        return generatePage(data)
+        return generateMarkdown(data)
     })
     .then(writeMd => {
         return write(writeMd);
