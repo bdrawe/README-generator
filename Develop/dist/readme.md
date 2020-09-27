@@ -1,7 +1,7 @@
 
-  # Weather
+  # Weather Dashboard
  
-  ##Table of Contents
+  ## Table of Contents
  
     [Description](##Description)
     [Installation](##Installation)
@@ -11,17 +11,17 @@
  
  
   ## Description
-  Get the Weather
+  Find the weather where you live! This dashboard provides the temperature, uv index, and even more! Just type in your city! 
  
-  ##Installation
-  Clone Repo
+  ## Installation
+  Clone the repo
  
-  ##Use-case
-  Yep
+  ## Use-case
+  To find the daily weather
  
-  ##Contributors
-  bdrawe
+  ## Contributors
+  Bryce Drawe
  
-  ##License
+  ## License
   MIT
   
