@@ -172,24 +172,4 @@ questions()
     
  
 
-// questions()
-    // .then(console.log(data))
-        
-    // .then(writeToFile(filename,data));
 
-// // function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile('./dist/README.md', data, err =>{
-//         if (err) throw err
-
-//         console.log("Markdown File made! ")
-//     })
-// }
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
