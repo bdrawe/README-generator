@@ -3,7 +3,7 @@
 const generateMarkdown = (data) => {
   console.log(data);
   return `
-  # ${data.name}
+  # ${data.title}
  
   ##Table of Contents
  

@@ -22,7 +22,7 @@ const questions = () => {
         },
        {
            type:'input',
-           name: 'name',
+           name:'title',
            message: 'What is the name of your project?',
            validate: projectTitle => {
             if (projectTitle){
