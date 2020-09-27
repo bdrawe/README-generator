@@ -22,7 +22,7 @@ const questions = () => {
         },
        {
            type:'input',
-           name: 'title',
+           name: 'name',
            message: 'What is the name of your project?',
            validate: projectTitle => {
             if (projectTitle){
@@ -125,12 +125,15 @@ const write = (data) =>{
 
 
 questions()
-    .then(data => console.log(data.title))
+    .then(data => console.log("Questions Done"))
     .then(data =>{
         return generateMarkdown(data)
     })
     .then(writeMd => {
         return write(writeMd);
+    })
+    .catch(error =>{
+        console.log(error + " Whoops! It looks like something is wrong with your code!")
     })
         
 

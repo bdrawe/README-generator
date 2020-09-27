@@ -1,6 +1,9 @@
+
+
 const generateMarkdown = (data) => {
+  console.log(data);
   return `
-  # ${data.Title}
+  # ${data.name}
  
   ##Table of Contents
  
